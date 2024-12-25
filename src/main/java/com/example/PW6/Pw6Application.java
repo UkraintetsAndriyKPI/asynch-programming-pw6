@@ -21,7 +21,7 @@ public class Pw6Application {
 
         ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
         executor.schedule(() -> System.out.printf("[%s] executor task 15s delay after start\n",
-                LocalDateTime.now().toString()), 15, TimeUnit.SECONDS);
+                LocalDateTime.now()), 15, TimeUnit.SECONDS);
 
         AsyncTaskService asyncTaskService = new AsyncTaskService();
 
